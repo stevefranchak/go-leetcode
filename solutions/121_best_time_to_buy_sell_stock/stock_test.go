@@ -25,9 +25,10 @@ func TestMaxProfit(t *testing.T) {
 }
 
 func BenchmarkMaxProfit(b *testing.B) {
+	testData := []int{100, 200, 300, 400, 355, 254, 153}
 	var result int
 	for i := 0; i < b.N; i++ {
-		result = maxProfit([]int{100, 200, 300, 400, 355, 254, 153})
+		result = maxProfit(testData)
 	}
 	_ = result
 }
