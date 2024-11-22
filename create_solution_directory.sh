@@ -23,9 +23,9 @@ mkdir -p "$directory_name"
 solution_file="${directory_name}/${problem_slug}.go"
 solution_test_file="${directory_name}/${problem_slug}_test.go"
 
-echo "package ${problem_slug}" > $solution_file
+echo "package ${problem_slug}" >$solution_file
 
-cat <<EOL > $solution_test_file
+cat <<EOL >$solution_test_file
 package ${problem_slug}
 
 import "testing"
@@ -35,7 +35,6 @@ func TestMethodName(t *testing.T) {
         input int
         want int
     }{
-        // Add test cases here
         {0, 0},
         {0, 0},
     }
